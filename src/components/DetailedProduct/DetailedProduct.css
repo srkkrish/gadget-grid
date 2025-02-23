@@ -1,0 +1,115 @@
+.detailed-products {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            outline: 0;
+            border: 0;
+            padding: 5px;
+            border-bottom: 3px solid black;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 150px;
+        }
+        tbody {
+            .model-field {
+                color: blue;
+                font-weight: bold;
+            }
+
+            .desc-field {
+                gap: 5px;
+                display: flex;
+                place-items: center;
+
+                .truncate-description {
+                    max-width: 200px; /* Adjust the max-width as per your needs */
+                    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+                    overflow: hidden; /* Hides the overflowed text */
+                    text-overflow: ellipsis; /* Adds the "..." at the end of the truncated text */
+                }
+
+                .fa {
+                    cursor: pointer;
+                }
+            }
+
+            .img-field {
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+
+    .view-detailed-description {
+        border: 0;
+        width: 500px;
+        overflow: hidden;
+        box-shadow: 1px 2px 3px grey;
+
+        .header {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4 {
+                margin: 0;
+            }
+
+            button {
+                outline: 0;
+                border: 1px solid grey;
+                padding: 0 5px;
+                border-radius: 0;
+            }
+        }
+
+        .content {
+            height: 250px;
+            overflow-y: auto;
+
+            /* Style the scrollbar track */
+            &::-webkit-scrollbar {
+                width: 8px; /* Makes the scrollbar thin */
+            }
+
+            /* Style the scrollbar handle (thumb) */
+            &::-webkit-scrollbar-thumb {
+                background-color: #888; /* Color of the scrollbar */
+                border-radius: 10px; /* Rounded corners */
+            }
+
+            /* Hover effect for the scrollbar thumb */
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: #555; /* Darker color on hover */
+            }
+
+            /* Optional: Style the scrollbar track (the area the thumb moves through) */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1; /* Light background for the track */
+                border-radius: 10px; /* Rounded corners for the track */
+            }
+        }
+    }
+}
