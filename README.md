@@ -48,7 +48,7 @@ export default tseslint.config({
   },
 })
 ```
-Please find some snapshots for GadgetGrid app with attached performance report using **npx-unlighthouse** [Instead of running Lighthouse one page at a time, Unlighthouse scans your entire site in one go and scores every page.]
+Please find some snapshots for **GadgetGrid** app with attached performance report using npx-unlighthouse [Instead of running Lighthouse one page at a time, Unlighthouse scans your entire site in one go and scores every page.]
 Full command => **npx unlighthouse --site <your-site>**
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/c91d63f9-0bd8-4448-8b52-feee3cfc1967" />
